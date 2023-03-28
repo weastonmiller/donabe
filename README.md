@@ -18,7 +18,7 @@ cd clonedDirectory/
 npm install
 ```
 
-There are 1 article and an about page (which is what the `/about` route uses) left as examples. Everything should work out of the box.
+There is 1 article and an about page (which is what the `/about` route uses) left as examples. Everything should work out of the box.
 
 ---
 
