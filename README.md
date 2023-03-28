@@ -54,7 +54,7 @@ The `_id` and `path` need to be the same so that the mapping works properly. It 
 
 This app is a standalone web app with no server. The `.md` files are stored directly in the repository. Even with multiple pictures and tons of markdown, the article files tend to remain under 5kb which feels acceptable.
 
-I tried to keep the libraries to an absolute bare minimum. This uses **no** component libraries and the only styling library it uses is `theme-ui`. It is my preference for styling and theming but anything else could be used as well.
+I tried to keep the libraries to an absolute bare minimum. This uses **no** component libraries and the only styling library it uses is `theme-ui`. It is my preference for styling and theming but anything else could be used as well. The app is viewable on **all** screen sizes (_some extremely esoteric exceptions probably exist_) and I tried to make the app as accessible as possible by using all the correct html tags. _There is still work to be done with better accessibility though_.
 
 All routes are loaded through `@loadable` so you aren't fetching all routes or all articles from everywhere. For instance, if you go straight to an article via the `_id` in the url, then only that single piece of the js bundle will load.
 
@@ -81,3 +81,7 @@ I have done some of my own component mapping for certain html tags rendered by `
 ### Article
 
 ![Article](./src/assets/article.png)
+
+### Article Small Screen Size
+
+![Article Small](./src/assets/article_small.png)
