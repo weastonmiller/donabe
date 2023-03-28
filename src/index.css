@@ -1,0 +1,125 @@
+:root {
+  font-family: 'IBM Plex Mono', system-ui, Avenir, Helvetica, Arial, sans-serif;
+
+  width: 100%;
+  height: 100%;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+}
+
+#root {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  background-color: transparent;
+}
+
+body {
+  margin: 0;
+  display: flex;
+  height: 100%;
+  width: 100%;
+  background-color: transparent;
+}
+
+a {
+  font-weight: 500;
+  color: #646cff;
+  text-decoration: inherit;
+}
+a:hover {
+  color: #535bf2;
+}
+
+.toggle {
+  position: relative;
+  width: 50px;
+  height: 20.5px;
+  border-radius: 20px;
+  transition: 0.2s ease all;
+  overflow: hidden;
+}
+
+/* Set to none with long content so the entire area is selectable but can be removed and content passed further down */
+.toggle::after {
+  display: none;
+}
+.toggle::before {
+  display: none;
+}
+
+.toggle__checkbox {
+  position: absolute;
+  left: -9999px;
+}
+
+.toggle__label {
+  position: relative;
+  display: inline-block;
+  top: 1.5px;
+  left: 3.5px;
+  width: 15.5px;
+  height: 15.5px;
+  border-radius: 100%;
+  background-color: #fff;
+  transition: 0.2s ease all;
+  cursor: pointer;
+}
+
+.toggle__label::before {
+  position: absolute;
+  top: 0;
+  color: #fff;
+  font-size: 13px;
+  font-weight: bold;
+  left: -30px;
+  content: '______';
+  opacity: 0;
+  line-height: 32px;
+  transition: 0.2s ease all;
+}
+
+.toggle__label::after {
+  position: absolute;
+  top: -9px;
+  color: #fff;
+  font-size: 13px;
+  font-weight: bold;
+  left: 20px;
+  content: '_______';
+  opacity: 0;
+  line-height: 32px;
+  transition: 0.2s ease all;
+}
+
+/* How far the handle should move */
+.toggle__checkbox:checked ~ .toggle__label {
+  left: 31px;
+}
+
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.article {
+  transition: 0.15s ease all;
+  box-shadow: none;
+}
+
+.grid-root {
+  width: 100%;
+  height: 100%;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  align-content: flex-start;
+  justify-items: center;
+  gap: 15px;
+  transition: 0.2s ease all;
+}
