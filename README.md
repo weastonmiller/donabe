@@ -68,6 +68,16 @@ I have done some of my own component mapping for certain html tags rendered by `
 
 ---
 
+## Styles
+
+The layout of the `/browse` grid is changeable in `index.css`. This is done to support optional thumbnails in case you want more of a text blog style interface.
+
+All other styles are changeable at will since this is written with vanilla css and `theme-ui`.
+
+You can change the `light` and `dark` theme colors in `theme.ts` and the whole app should reflect the changes.
+
+---
+
 ## Images
 
 ### Home

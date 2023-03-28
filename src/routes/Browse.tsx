@@ -48,10 +48,13 @@ function ArticleItem({ _id, path, title, thumbnail, created }: Article) {
           overflow: 'hidden',
         }}
       >
-        <img
-          src={thumbnail}
-          sx={{ objectFit: 'cover', width: '100%', height: 'auto' }}
-        />
+        {thumbnail && (
+          <img
+            src={thumbnail}
+            sx={{ objectFit: 'cover', width: '100%', height: 'auto' }}
+          />
+        )}
+
         <p
           sx={{
             padding: '0 0.75rem',
