@@ -46,10 +46,6 @@ The articles are `.md` files written directly in the respository in the `/public
 },
 ```
 
-The `_id` and `path` need to be the same so that the mapping works properly. It doesn't matter what it is, it just needs to be the same `string`.
-
----
-
 ## Technology
 
 This app is a standalone web app with no server. The `.md` files are stored directly in the repository. Even with multiple pictures and tons of markdown, the article files tend to remain under 5kb which feels acceptable.
