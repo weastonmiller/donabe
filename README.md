@@ -18,7 +18,7 @@ cd clonedDirectory/
 npm install
 ```
 
-There are 2 articles and an about page (which is what the `/about` route uses) left as examples. Everything should work out of the box
+There are 1 article and an about page (which is what the `/about` route uses) left as examples. Everything should work out of the box.
 
 ---
 
@@ -64,7 +64,7 @@ The `/.md` articles are rendered using `react-markdown`. There is no compilation
 
 I have done some of my own component mapping for certain html tags rendered by `react-markdown` and these can be found in `componentMapping.ts`. It's small things like making the `h6` tag into a subtitle type tag for images, doing some image width fixing, etc. Feel free to change anything here to your liking.
 
-**Disclaimer** - I did not make this with code rendering in mind, so that will require some setup. As is, it does render single and multiline code blocks, but the styling is very basic and there is no syntax highlighting. I did not need code rendering in general for my own use case so it was left out. If you want to add it yourself, it is fairly simple and you can find out more [from the react-markdown documentation](https://github.com/remarkjs/react-markdown#use-custom-components-syntax-highlight)
+**Disclaimer** - I did not make this with code rendering in mind, so that will require some setup. As is, it does render single and multiline code blocks, but the styling is very basic and there is no syntax highlighting. I did not need code rendering in general for my own use case so it was left out. If you want to add it yourself, it is fairly simple and you can find out more [from the react-markdown documentation](https://github.com/remarkjs/react-markdown#use-custom-components-syntax-highlight).
 
 ---
 
